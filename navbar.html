@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portofolio</title>
+    <!-- logo -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Stack+Sans+Notch:wght@200..700&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link ke css -->
+    <link rel="stylesheet" href="STYLE/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="#">MY PORTOFOLIO <span>Lcode</span></a>
+      </div>
+
+      <!-- Hamburger efek -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="nav-item">
+        <a href="#">HOME</a>
+        <a href="#about">About Me</a>
+        <a href="#skill">Skill</a>
+        <a href="#kontak">kontak |</a>
+        <div class="medsos">
+          <a href="https://github.com/newbiejy235">
+            <i data-feather="github"></i>
+          </a>
+          <a href="https://www.instagram.com/bankaii_000/">
+            <i data-feather="instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- <div class="medsos">
+        <a href="#"> <img src="" alt="medsos"> </a>
+        <a href="#"> <img src="" alt="medsos"> </a>
+      </div> -->
+    </nav>
+
+    <div class="hero">
+      <h1 id="animation">
+        My portofolio <br />
+        Lcode
+      </h1>
+      <br />
+      <p id="animationTeks">
+        Back-end | Front-end | web developer | UI/UX designer
+      </p>
+      <br />
+      <button>
+        <a
+          href=".vscode/asset/CV/Adif Halim Alamsyah.pdf"
+          download="CV-Lcode.jpg"
+          class="btn-download"
+        >
+          Download CV
+        </a>
+      </button>
+    </div>
+
+    <div class="About" id="About">
+      <div class="About-foto">
+        <img src="asset/tracing-anime-removebg-preview.png" alt="lustrasi" />
+      </div>
+      <div class="About-text">
+        <h1 class="h-text">About me</h1>
+
+        <p>
+          Saya adalah seorang pelajar yang sedang menempuh pendidikan di SMK
+          Taruna Bhakti, tepatnya di kelas X RPL 5. Saya memiliki hobi yang
+          sangat saya sukai, yaitu ngoding dan bermain game. Dengan ketertarikan
+          dan semangat yang saya miliki dalam dunia teknologi dan pemrograman,
+          saya berharap kelak bisa menjadi seorang programmer yang andal dan
+          profesional, mampu menciptakan karya-karya yang bermanfaat bagi banyak
+          orang.
+        </p>
+      </div>
+    </div>
+
+    <div class="skill" id="skill">
+      <h1 class="skill-teks">My Skills</h1>
+      <div class="card">
+        <div class="skill-logo">
+          <img src="asset/icon/html-5.png" alt="" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="skill-logo">
+          <img src="asset/icon/css3.png" alt="" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="skill-logo">
+          <img src="asset/icon/react.png" alt="" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="skill-logo">
+          <img src="asset/icon/ruby.png" alt="" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="skill-logo">
+          <img src="asset/icon/python.png" alt="" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="skill-logo">
+          <img src="asset/icon/php.png" alt="" />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="skill-logo">
+          <img src="asset/icon/typescript.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- rombak bagian ini(ganti nama selektornya) -->
+    <div class="projek-teks">
+      <h1>MY PROJECT</h1>
+      <div class="projek">
+        <button id="kiri"><i data-feather="chevron-left"></i></button>
+        <div class="projek-card">
+          <div id="gambar"></div>
+          <p id="cetak"></p>
+          <br />
+          <p id="cetak2"></p>
+          <br />
+          <p id="cetak3"></p>
+          <button id="lihat"><a href="">See project</a></button>
+        </div>
+        <button id="kanan"><i data-feather="chevron-right"></i></button>
+      </div>
+    </div>
+
+    <div class="input" id="kontak">
+      <form action="https://formspree.io/f/xeonwbzp" method="post">
+        <input
+          type="text"
+          name="nama"
+          placeholder="Masukan nama pengirim"
+          required
+        />
+        <br />
+        <input type="email" name="email" placeholder="Masukan Gmail" required />
+
+        <br />
+        <textarea name="pesan" placeholder="Pesan:" required></textarea>
+        <br />
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <img src="asset/download__1_-removebg-preview.png" alt="" />
+    </div>
+
+    <input type="hidden" name="_format" value="plain" />
+
+    <footer>
+      <p>Created by Lcode | © 2024 All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typeit/dist/index.umd.js"></script>
+    <script src="main.js"></script>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

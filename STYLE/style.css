@@ -1,0 +1,1010 @@
+/* untuk memudahkan mengambil warna */
+/* untuk memudahkan mengambil warna */
+:root {
+  --warnaBG: #f8f9fa;
+  --WarnaHero: #1a4d6d;
+  --warnaAbout: #215271;
+  --warnaSkill: #1f4d69;
+  --warnaSEARCH: #4caf93;
+  --WarnaProjek: #26526d;
+  --WarnaInput: #22506d;
+  --warnaTEKS: #ffffff;
+  --warnaBEBAS: #2c3e50;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--warnaBG);
+  color: var(--warnaTEKS);
+  font-family: Vend Sans;
+}
+.navbar {
+  display: flex;
+  padding: 2rem 5rem;
+  background-color: rgba(255, 255, 255, 0.184);
+  backdrop-filter: blur(15px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  justify-content: space-between;
+}
+.navbar .nav-logo a {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  justify-content: flex-start;
+}
+.navbar .nav-logo a span {
+  color: transparent;
+  background-image: linear-gradient(to right, rgba(109, 191, 242, 0.735), cyan);
+  background-clip: text;
+}
+.navbar .nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.navbar .nav-item > a {
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+.nav-item {
+  display: flex;
+  gap: 30px;
+}
+.hero {
+  padding: 15rem 20rem;
+  background-color: var(--WarnaHero);
+  text-align: center;
+}
+
+.hero > button a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.hero h1 {
+  font-family: "Stack Sans Notch", sans-serif;
+  font-size: 2.5rem;
+  font-weight: weight;
+  font-style: normal;
+}
+.hero p {
+  font-size: 1rem;
+}
+.hero button {
+  box-shadow: black 6px 5px;
+  padding: 15px 10rem;
+  border-radius: 20px;
+  font-size: medium;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.About {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--warnaAbout);
+  display: flex;
+  justify-content: center;
+  padding: 20px 40px 0px 40px;
+  margin-bottom: 0px;
+}
+.h-text {
+  color: white;
+  font-size: 36px;
+  font-family: "Bubblegum Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 20px;
+}
+.About-foto img {
+  width: 350px;
+  height: auto;
+  border-radius: 20px;
+}
+.About-text {
+  color: white;
+  font-size: 20px;
+  max-width: 800px;
+  line-height: 1.5;
+  padding-top: 9rem;
+}
+.About-text p {
+  margin: 0;
+  text-align: left;
+}
+.skill {
+  text-align: center;
+  justify-content: center;
+  padding: 10rem;
+  background-color: var(--warnaSkill);
+}
+.skill-teks {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 50px;
+  font-family: "Bubblegum Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 0.5px 4px 1px #4ed7f1;
+}
+.skill-logo img {
+  width: 10rem;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.skill .card {
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #ffffff59;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.582);
+  margin-right: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nav-item a:hover {
+  cursor: pointer;
+  color: black;
+}
+.projek-teks {
+  color: white;
+  background-color: var(--WarnaProjek);
+  font-size: 36px;
+  padding-top: 50px;
+  font-family: "Bubblegum Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+.projek {
+  padding: 50px;
+  background-color: var(--WarnaProjek);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  text-shadow: none;
+}
+.projek .projek-card {
+  background-color: rgba(255, 255, 255, 0.148);
+  backdrop-filter: blur(15px);
+  width: 500px;
+  height: 700px;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.334);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.436);
+  color: black;
+  margin: 0 20px;
+  justify-content: start;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.projek .projek-card img {
+  width: 350px;
+  height: auto;
+  border-radius: 15px;
+  padding-top: 25px;
+}
+.projek button {
+  background-color: transparent;
+  border: none;
+  margin: 20px;
+  font-size: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.projek-card button a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background-color: var(--warnaSEARCH);
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.589) 3px 4px 2px;
+}
+.input {
+  background-color: var(--WarnaInput);
+  padding: 30px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 60px;
+}
+.btn {
+  width: 300px;
+  height: 40px;
+  background-color: var(--warnaSEARCH);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.582);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+textarea {
+  width: 500px;
+  height: 80px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type="text"] {
+  width: 500px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type="email"] {
+  width: 500px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.input img {
+  width: 400px;
+  height: auto;
+  padding: 20px;
+}
+footer {
+  background-color: var(--WarnaHero);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.589) 6px 8px 4px;
+}
+.navbar .nav-item > a:hover {
+  cursor: pointer;
+  transform: scale(0.98);
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+}
+
+.navbar .nav-item > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.638);
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-item > a:hover::after {
+  width: 100%;
+
+  border-bottom: 3px solid;
+}
+
+#kirim:hover {
+  background-color: var(--warnaSEARCH);
+  transform: scale(1.1);
+}
+.navbar .nav-logo a:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    rgb(50, 50, 128),
+    rgb(0, 255, 255)
+  );
+  color: transparent;
+  background-clip: text;
+}
+
+.hero button:hover {
+  cursor: pointer;
+  background-color: var(--warnaSEARCH);
+  transform: scale(0.98);
+}
+.projek > button:hover {
+  cursor: pointer;
+  transform: scale(1.8);
+}
+.projek-card button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+} /* Sembunyikan checkbox */
+#menu-toggle {
+  display: none;
+} /* Hamburger icon - default hidden */
+.hamburger-label {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+}
+.hamburger-label span {
+  width: 30px;
+  height: 3px;
+  background: black;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+} /* Animasi hamburger menjadi X saat checked */
+#menu-toggle:checked + .hamburger-label span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+  background: #59ac77;
+}
+#menu-toggle:checked + .hamburger-label span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+#menu-toggle:checked + .hamburger-label span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+  background: #59ac77;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  rotate: 2deg;
+}
+
+/* Responsive buat HP 768px */
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    padding: 1.5rem;
+    background-color: white;
+    justify-content: space-between;
+  }
+
+  /* Tampilkan hamburger icon */
+  .hamburger-label {
+    display: flex;
+  }
+
+  /* Menu default tersembunyi di mobile */
+  .navbar .nav-item {
+    position: fixed;
+    left: -100%;
+    top: 75px;
+    flex-direction: column;
+    background-image: url(../asset/langit.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    transition: left 0.3s ease;
+    padding: 2rem 0;
+    gap: 1rem;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.2);
+    z-index: 9998;
+    border: 2px solid rgba(255, 255, 255, 0.254);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* * Menu medsos di mobile */
+  .navbar .nav-item .medsos a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+
+  /* Menu muncul saat checkbox checked */
+  #menu-toggle:checked ~ .nav-item {
+    left: 0;
+  }
+  .navbar .nav-logo a {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    justify-content: flex-start;
+  }
+  .navbar .nav-logo a span {
+    color: #59ac77;
+  }
+  .navbar .nav-item a {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    font-size: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.41);
+    border-radius: 25px;
+    height: 3rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .navbar .nav-item > a {
+    transition: transform 0.4s ease, color 0.4s ease;
+  }
+  .navbar .nav-item {
+    display: flex;
+  }
+  .hero {
+    padding: 15rem 5rem;
+    background-color: var(--WarnaHero);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero h1 {
+    font-family: "Stack Sans Notch", sans-serif;
+    font-weight: weight;
+    font-style: normal;
+  }
+  .hero p {
+    font-size: small;
+  }
+  .hero button {
+    box-shadow: black 6px 5px;
+    padding: 15px;
+    width: 400px;
+    border-radius: 20px;
+    font-size: medium;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .About {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--warnaAbout);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px 50px 20px;
+    margin-bottom: 0px;
+    align-items: center;
+  }
+  .h-text {
+    color: white;
+    font-size: 36px;
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 10px;
+  }
+  .About-foto img {
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    border-radius: 50%;
+  }
+  .About-text {
+    color: white;
+    font-size: 15px;
+    max-width: 800px;
+    line-height: 1.5;
+    padding-top: 1rem;
+  }
+  .About-text p {
+    margin: 0;
+    text-align: left;
+  }
+  .skill {
+    text-align: center;
+    justify-content: center;
+    padding: 90px 20px;
+    background-color: var(--warnaSkill);
+  }
+  .skill-teks {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 50px;
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .skill-logo img {
+    width: 8rem;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  .skill .card {
+    padding: 0.5px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #ffffff59;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.582);
+    margin: 1px 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .nav-item .medsos a:hover {
+    cursor: pointer;
+    border-radius: 35px;
+    background-color: rgba(71, 63, 63, 0.349);
+  }
+  .nav-item > a:hover {
+    cursor: pointer;
+    background-color: green;
+  }
+  .projek-teks {
+    color: white;
+    background-color: var(--WarnaProjek);
+    font-size: 26px;
+    padding-top: 30px;
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+  .projek {
+    padding: 30px 50px;
+    background-color: var(--WarnaProjek);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    text-shadow: none;
+  }
+  .projek .projek-card {
+    background-color: rgba(255, 255, 255, 0.157);
+    backdrop-filter: blur(25px);
+    width: 500px;
+    height: 700px;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.204);
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.612);
+    color: black;
+    margin: 0 20px;
+    justify-content: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .projek .projek-card img {
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    padding-top: 25px;
+  }
+  .projek button {
+    background-color: transparent;
+    border: none;
+    margin: 20px;
+    font-size: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .projek-card button a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: var(--warnaSEARCH);
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.589) 3px 4px 2px;
+  }
+  .input {
+    background-color: var(--WarnaInput);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 50px;
+  }
+  .btn {
+    width: 300px;
+    height: 40px;
+    background-color: var(--warnaSEARCH);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.582);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  textarea {
+    width: 500px;
+    height: 80px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="text"] {
+    width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="email"] {
+    width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .input img {
+    width: 400px;
+    height: auto;
+    padding: 20px;
+  }
+  footer {
+    background-color: var(--WarnaHero);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.589) 6px 8px 4px;
+  }
+  #kirim:hover {
+    background-color: var(--warnaSEARCH);
+    transform: scale(1.1);
+  }
+  .projek-card a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .navbar .nav-logo a:hover {
+    cursor: pointer;
+    color: var(--warnaSEARCH);
+  }
+
+  .hero button:hover {
+    cursor: pointer;
+    background-color: var(--warnaSEARCH);
+    transform: scale(0.98);
+  }
+  .projek > button:hover {
+    cursor: pointer;
+    transform: scale(1.8);
+  }
+  .projek-card button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+
+
+
+/* responsive tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .navbar {
+    display: flex;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.184);
+    backdrop-filter: blur(15px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    justify-content: space-between;
+  }
+
+  .navbar .nav-logo a {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    justify-content: flex-start;
+  }
+
+  .navbar .nav-logo a span {
+    color: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgba(109, 191, 242, 0.735),
+      cyan
+    );
+    background-clip: text;
+  }
+
+  .navbar .nav-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+  }
+
+  .navbar .nav-item > a {
+    transition: transform 0.4s ease, color 0.4s ease;
+  }
+
+  .nav-item {
+    display: flex;
+    gap: 20px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding: 15rem;
+    background-color: var(--WarnaHero);
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero > button a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  .hero h1 {
+    font-family: "Stack Sans Notch", sans-serif;
+    font-size: 2.5rem;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero button {
+    box-shadow: black 6px 5px;
+    padding: 15px;
+    width: 500px;
+    border-radius: 20px;
+    font-size: medium;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .About {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--warnaAbout);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .h-text {
+    color: white;
+    font-size: 36px;
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .About-foto img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .About-text {
+    color: white;
+    font-size: 20px;
+    max-width: 800px;
+    padding-bottom: 5rem;
+  }
+  .About-text p {
+    margin: 0;
+    text-align: justify;
+  }
+  .skill {
+    text-align: center;
+    justify-content: center;
+    padding: 10rem;
+    background-color: var(--warnaSkill);
+  }
+
+  .skill-teks {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 50px;
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0.5px 4px 1px #4ed7f1;
+  }
+  .skill-logo img {
+    width: 7rem;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .skill .card {
+    padding: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #ffffff59;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.582);
+    margin-right: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .nav-item a:hover {
+    cursor: pointer;
+    color: black;
+  }
+  .projek-teks {
+    color: white;
+    background-color: var(--WarnaProjek);
+    font-size: 36px;
+    padding-top: 50px;
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+  .projek {
+    padding: 50px;
+    background-color: var(--WarnaProjek);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    text-shadow: none;
+  }
+  .projek .projek-card {
+    background-color: rgba(255, 255, 255, 0.148);
+    backdrop-filter: blur(15px);
+    width: 500px;
+    height: 700px;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.257);
+    color: black;
+    margin: 0 20px;
+    justify-content: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.546);
+  }
+  .projek .projek-card img {
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    padding-top: 25px;
+  }
+  .projek button {
+    background-color: transparent;
+    border: none;
+    margin: 20px;
+    font-size: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .projek-card button a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: var(--warnaSEARCH);
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.589) 3px 4px 2px;
+  }
+  .input {
+    background-color: var(--WarnaInput);
+    padding: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 60px;
+  }
+  .btn {
+    width: 300px;
+    height: 40px;
+    background-color: var(--warnaSEARCH);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.582);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  textarea {
+    width: 500px;
+    height: 80px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="text"] {
+    width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="email"] {
+    width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .input img {
+    width: 400px;
+    height: auto;
+    padding: 20px;
+  }
+  footer {
+    background-color: var(--WarnaHero);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.589) 6px 8px 4px;
+  }
+  .navbar .nav-item > a:hover {
+    cursor: pointer;
+    transform: scale(0.98);
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+  }
+
+  .navbar .nav-item > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.638);
+    transition: width 0.3s ease;
+  }
+
+  .navbar .nav-item > a:hover::after {
+    width: 100%;
+
+    border-bottom: 3px solid;
+  }
+
+  #kirim:hover {
+    background-color: var(--warnaSEARCH);
+    transform: scale(1.1);
+  }
+  .navbar .nav-logo a:hover {
+    cursor: pointer;
+    background-image: linear-gradient(
+      to right,
+      rgb(50, 50, 128),
+      rgb(0, 255, 255)
+    );
+    color: transparent;
+    background-clip: text;
+  }
+
+  .hero button:hover {
+    cursor: pointer;
+    background-color: var(--warnaSEARCH);
+    transform: scale(0.98);
+  }
+  .projek > button:hover {
+    cursor: pointer;
+    transform: scale(1.8);
+  }
+  .projek-card button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
