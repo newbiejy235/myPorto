@@ -379,7 +379,7 @@ footer {
   /* Menu default tersembunyi di mobile */
   .navbar .nav-item {
     position: fixed;
-    left: -1000%;
+    left: -100%;
     top: 75px;
     flex-direction: column;
     background-image: url(../asset/langit.jpeg);
@@ -530,7 +530,7 @@ footer {
     display: inline-block;
     background-color: #ffffff59;
     box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.582);
-    margin: 7px 5px;
+    margin: 1px 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   .nav-item .medsos a:hover {
@@ -618,7 +618,7 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   textarea {
-    width: 300px;
+    width: 500px;
     height: 80px;
     padding: 10px;
     margin: 10px 0;
@@ -626,14 +626,14 @@ footer {
     border-radius: 5px;
   }
   input[type="text"] {
-    width: 300px;
+    width: 500px;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
   input[type="email"] {
-    width: 300px;
+    width: 500px;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
