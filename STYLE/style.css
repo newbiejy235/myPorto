@@ -506,7 +506,7 @@ footer {
   .skill {
     text-align: center;
     justify-content: center;
-    padding: 90px 20px;
+    padding: 8px ;
     background-color: var(--warnaSkill);
   }
   .skill-teks {
@@ -525,12 +525,12 @@ footer {
     padding: 30px;
   }
   .skill .card {
-    padding: 0.5px;
+    padding: 0.1px;
     border-radius: 50%;
     display: inline-block;
     background-color: #ffffff59;
     box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.582);
-    margin: 1px 5px;
+    margin: 10px ;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   .nav-item .medsos a:hover {
@@ -598,13 +598,12 @@ footer {
   }
   .input {
     background-color: var(--WarnaInput);
-    padding: 30px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 10px 50px;
   }
   .btn {
     width: 300px;
@@ -618,7 +617,7 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   textarea {
-    width: 500px;
+    width: 400px;
     height: 80px;
     padding: 10px;
     margin: 10px 0;
@@ -626,14 +625,14 @@ footer {
     border-radius: 5px;
   }
   input[type="text"] {
-    width: 500px;
+    width: 400px;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
   input[type="email"] {
-    width: 500px;
+    width: 400px;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
